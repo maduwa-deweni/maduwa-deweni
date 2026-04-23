@@ -1,4 +1,4 @@
-# 🚀 MaDuWa GitHub Profile
+# 🚀 Complete Copy-Paste GitHub Profile README
 
 ```markdown
 <div align="center">
@@ -6,7 +6,12 @@
 # 👋 Hi, I'm Maduwa
 ### 🚀 Passionate Developer from Sri Lanka 🇱🇰
 
-<img src="https://readme-typing-svg.herokuapp.com?
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;Automation+Expert;UI%2FUX+Enthusiast;Open+Source+Contributor" alt="Typing SVG" />
+
+![Profile Views](https://komarev.com/ghpvc/?username=YOUR_USERNAME&color=brightgreen&style=flat-square&label=Profile+Views)
+[![GitHub followers](https://img.shields.io/github/followers/YOUR_USERNAME?label=Followers&style=social)](https://github.com/YOUR_USERNAME)
+[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME?label=Stars&style=social)](https://github.com/YOUR_USERNAME)
+
 </div>
 
 ---
@@ -243,3 +248,37 @@ If you like my work, consider buying me a coffee! ☕
 ```
 
 ---
+
+## 📁 GitHub Actions - Snake Animation
+
+**File:** `.github/workflows/snake.yml`
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@master
+        id: snake-gif
+        with:
+          github_user_name: YOUR_USERNAME
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
+
+      - uses: crazy-max/ghaction-github-pages@v2.1.3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+---
+
