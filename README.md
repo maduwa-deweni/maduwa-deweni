@@ -130,7 +130,7 @@ me.say_hi()
 
 <div align="center">
   
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=maduwa-deweni&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph">
 
 </div>
 
