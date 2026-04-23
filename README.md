@@ -95,7 +95,7 @@ me.say_hi()
 
 <div align="center">
   
-[![trophy](https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=radical&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/YOUR_USERNAME)
+[![trophy](https://github-profile-trophy.vercel.app/?username=maduwa-deweni&theme=radical&no-frame=true&no-bg=true&row=1&column=7)](https://github.com/maduwa-deweni)
 
 </div>
 
