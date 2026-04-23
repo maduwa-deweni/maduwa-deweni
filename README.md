@@ -105,7 +105,7 @@ me.say_hi()
 
 <div align="center">
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maduwa-deweni&repo=telegram-file-renamer-bot&theme=radical&hide_border=true)](https://github.com/maduwa-deweni/telegram-file-renamer-bot)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maduwa-deweni&repo=Elite-Renamer&theme=radical&hide_border=true)]([https://github.com/maduwa-deweni/Elite-Renamer](https://github.com/maduwa-deweni/Elite-Renamer))
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=maduwa-deweni&repo=web-automation-tools&theme=radical&hide_border=true)](https://github.com/maduwa-deweni/web-automation-tools)
 
 </div>
