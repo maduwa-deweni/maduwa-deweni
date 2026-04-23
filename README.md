@@ -1,4 +1,4 @@
-# 🚀 Complete Copy-Paste GitHub Profile README
+# 🚀 MaDuWa GitHub Profile
 
 ```markdown
 <div align="center">
