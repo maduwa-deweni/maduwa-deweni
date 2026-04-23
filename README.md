@@ -157,7 +157,7 @@ me.say_hi()
 
 <div align="center">
   
-![Snake animation](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/maduwa-deweni/maduwa-deweni/output/github-contribution-grid-snake.svg)
 
 </div>
 
