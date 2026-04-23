@@ -1,74 +1,24 @@
-<!-- Header Section with Soft Wave & Neon Effect -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=250&section=header&text=MADUWA%20DEV&fontSize=80&fontColor=00e5ff&animation=twinkling" width="100%" />
-</div>
+name: GitHub-Profile-3D-Contrib
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00E5FF&center=true&vCenter=true&width=500&lines=System+Automator+🤖;Telegram+Bot+Architect+⚙️;C%2B%2B+%26+Python+Expert+🐍;UI%2FUX+Enthusiast+🎨" alt="Typing SVG" />
-</div>
+on:
+  schedule: # හැම දවසකම රෑ 12ට update වෙන්න
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
-</p>
-
----
-
-### ⚡ Quick Status
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=neon&border_radius=10" />
-      </td>
-      <td>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=neon&border_radius=10" />
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
-### 🛠️ Professional Skill Box
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,html,tailwind,linux,git,vscode,mysql,docker,py&theme=dark" />
-</div>
-
-<br/>
-
-<div align="center">
-  <!-- Glowing GitHub Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=dracula&margin-w=15&column=4" width="100%" />
-</div>
-
----
-
-### 🧪 Advanced Activity Wave
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&bg_color=000000&color=00e5ff&line=00e5ff&point=ffffff&area=true&hide_border=true" width="100%" />
-</div>
-
----
-
-### 🤝 Let's Collaborate
-<div align="center">
-  <a href="https://t.me/YOUR_TELEGRAM">
-    <img src="https://img.shields.io/badge/Telegram-000000?style=for-the-badge&logo=telegram&logoColor=00e5ff" />
-  </a>
-  <a href="https://wa.me/YOUR_WHATSAPP">
-    <img src="https://img.shields.io/badge/WhatsApp-000000?style=for-the-badge&logo=whatsapp&logoColor=25D366" />
-  </a>
-  <a href="https://instagram.com/YOUR_INSTA">
-    <img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=E4405F" />
-  </a>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
-  <br/>
-  <img src="https://views.whatilearened.today/views/github/YOUR_USERNAME/github.svg" />
-  <br/>
-  <p><i>Everything is possible with the right logic... 🚀</i></p>
-</div>
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v3
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          git commit -m "Generated 3D Profile Contrib"
+          git push
